@@ -87,16 +87,18 @@ export enum Rarity {
 
 // enums can't have all numeric names, so we build our own enum
 // tslint:disable-next-line variable-name
-export const Frame: { [key in "1993" | "2003" | "2015" | "Future"]: number } = {
+export const Frame: { [key in "1993" | "1997" | "2003" | "2015" | "Future"]: number } = {
 	1993: 0,
-	2003: 1,
-	2015: 2,
-	Future: 3,
+	1997: 1,
+	2003: 2,
+	2015: 3,
+	Future: 4,
 
 	0: "1993",
-	1: "2003",
-	2: "2015",
-	3: "Future",
+	1: "1997",
+	2: "2003",
+	3: "2015",
+	4: "Future",
 } as any;
 
 export enum Border {
