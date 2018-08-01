@@ -206,6 +206,10 @@ export module Catalog {
 	export async function cardNames () {
 		return (await queryApi<ApiCatalog>("catalog/card-names")).data;
 	}
+	
+	export async function artistNames () {
+		return (await queryApi<ApiCatalog>("catalog/artist-names")).data;
+	}
 
 	export async function wordBank () {
 		return (await queryApi<ApiCatalog>("catalog/word-bank")).data;

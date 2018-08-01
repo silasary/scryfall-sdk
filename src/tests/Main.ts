@@ -164,6 +164,11 @@ describe("Scry", function () {
 			expect(result.length).gte(18059);
 		});
 
+		it("artist names", async () => {
+			const result = await Scry.Catalog.artistNames();
+			expect(result.length).gte(668);
+		});
+
 		it("word bank", async () => {
 			const result = await Scry.Catalog.wordBank();
 			expect(result.length).gte(12892);
